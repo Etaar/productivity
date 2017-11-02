@@ -1,0 +1,65 @@
+<templateSet group="NodeJS">
+  <template name="require" value="const $NAME$ = require('$PATH$');$END$" description="Require Live Template" toReformat="false" toShortenFQNames="true">
+    <variable name="PATH" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSX_HTML" value="false" />
+    </context>
+  </template>
+  <template name="iferr" value="if (err) {&#10;&#9;callback(err);&#10;&#9;return;&#10;}&#10;$END$&#10;callback();" description="Async Error Live Template" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSX_HTML" value="false" />
+    </context>
+  </template>
+  <template name="awaterfall" value="async.waterfall([&#10;&#9;cb =&gt; {$END$}&#10;], (err) =&gt; {&#10;&#9;if (err) {&#10;&#9;&#9;callback(err);&#10;&#9;&#9;return;&#10;&#9;}&#10;&#9;callback();&#10;});" description="Async Waterfall Live Template" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="aeach" value="async.each($INDEX$, ($ITERATEE$, cb) =&gt; {&#10;&#9;$end$&#10;&#9;cb();&#10;}, (err) =&gt; {&#10;&#9;if (err) {&#10;&#9;&#9;callback(err);&#10;&#9;&#9;return;&#10;&#9;}&#10;&#9;callback();&#10;});" description="Async Each Live Template" toReformat="false" toShortenFQNames="true">
+    <variable name="INDEX" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ITERATEE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="end" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="module" value="var $module_name$ = {&#10;    $END$&#10;};&#10;&#10;module.exports = $module_name$;" description="Module Live Template" toReformat="false" toShortenFQNames="true">
+    <variable name="module_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="class" value="class $CLASS$ {&#10;    constructor($PARAM$) {&#10;        $END$&#10;    }&#10;}&#10;&#10;module.exports = $CLASS$;" description="Class Live Template" toReformat="false" toShortenFQNames="true">
+    <variable name="CLASS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="aparallel" value="async.parallel([&#10;&#9;cb =&gt; {$END$}&#10;], (err) =&gt; {&#10;&#9;if (err) {&#10;&#9;&#9;callback(err);&#10;&#9;}&#10;&#9;callback();&#10;});" description="Async Parallel Live Template" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="aeachof" value="async.eachOf($INDEX$, ($VALUE$, $KEY$, cb) =&gt; {&#10;&#9;$END$&#10;&#9;cb();&#10;}, (err) =&gt; {&#10;&#9;if (err) {&#10;&#9;&#9;callback(err);&#10;&#9;&#9;return;&#10;&#9;}&#10;&#9;callback();&#10;});" description="Async Each Of Live Template" toReformat="false" toShortenFQNames="true">
+    <variable name="INDEX" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="value" alwaysStopAt="true" />
+    <variable name="KEY" expression="" defaultValue="key" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ofunction" value="$COMMA1$&#10;&#10;$NAME$ : function($PARAMETERS$) {&#10;&#9;&#9;$BODY$&#10;&#9;}$COMMA2$" description="(function inside an object)" toReformat="false" toShortenFQNames="true">
+    <variable name="COMMA1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAMETERS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="BODY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="COMMA2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+</templateSet>
