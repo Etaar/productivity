@@ -1,42 +1,60 @@
 <templateSet group="Underscore">
-  <template name="_.each" value="_.each($COLLECTION$, ($ITEREE$)=&gt;{$END$}); " description="Each Live Template" toReformat="false" toShortenFQNames="true">
+  <template name="_each" value="_.each($COLLECTION$, ($ITEREE$)=&gt;{$END$}); " description="Each Live Template" toReformat="false" toShortenFQNames="true">
     <variable name="COLLECTION" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="ITEREE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="_.map" value="_.map($COLLECTION$, ($ITEREE$)=&gt;{$END$}); " description="Map Live Template" toReformat="false" toShortenFQNames="true">
+  <template name="_map" value="_.map($COLLECTION$, ($ITEREE$)=&gt;{$END$}); " description="Map Live Template" toReformat="false" toShortenFQNames="true">
     <variable name="COLLECTION" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="ITEREE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="_.find" value="_.find($COLLECTION$, ($ITEREE$)=&gt;{$END$}); " description="Find Live Template" toReformat="false" toShortenFQNames="true">
+  <template name="_find" value="_.find($COLLECTION$, ($ITEREE$)=&gt;{$END$}); " description="Find Live Template" toReformat="false" toShortenFQNames="true">
     <variable name="COLLECTION" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="ITEREE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="_.some" value="_.some($COLLECTION$, ($ITEREE$)=&gt;{$END$}); " description="Some Live Template" toReformat="false" toShortenFQNames="true">
+  <template name="_some" value="_.some($COLLECTION$, ($ITEREE$)=&gt;{$END$}); " description="Some Live Template" toReformat="false" toShortenFQNames="true">
     <variable name="COLLECTION" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="ITEREE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="_.every" value="_.every($COLLECTION$, ($ITEREE$)=&gt;{$END$}); " description="Every Live Template" toReformat="false" toShortenFQNames="true">
+  <template name="_every" value="_.every($COLLECTION$, ($ITEREE$)=&gt;{$END$}); " description="Every Live Template" toReformat="false" toShortenFQNames="true">
     <variable name="COLLECTION" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="ITEREE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="_.filter" value="_.filter($COLLECTION$, ($ITEREE$)=&gt;{$END$}); " description="Filter Live Template" toReformat="false" toShortenFQNames="true">
+  <template name="_filter" value="_.filter($COLLECTION$, ($ITEREE$)=&gt;{$END$}); " description="Filter Live Template" toReformat="false" toShortenFQNames="true">
     <variable name="COLLECTION" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="ITEREE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="_pluck" value="_.pluck($COLLECTION$, ($ITEREE$)=&gt;{$END$}); " description="Pluck Live Template" toReformat="false" toShortenFQNames="true">
+    <variable name="COLLECTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ITEREE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="_isUndefined" value="_.isUndefined($END$); " description="isUndefined Live Template" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="_extend" value="_.extend($COLLECTION$, $END$); " description="Extend Live Template" toReformat="false" toShortenFQNames="true">
+    <variable name="COLLECTION" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
