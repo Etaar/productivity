@@ -52,12 +52,25 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="ofunction" value="$COMMA1$&#10;&#10;$NAME$ : function($PARAMETERS$) {&#10;&#9;&#9;$BODY$&#10;&#9;}$COMMA2$" description="(function inside an object)" toReformat="false" toShortenFQNames="true">
+  <template name="ofunction" value="$COMMA1$&#10;&#10;$NAME$ : function($PARAMETERS$) {&#10;&#9;$END$&#10;}$COMMA2$" description="Function inside object Live Template" toReformat="false" toShortenFQNames="true">
     <variable name="COMMA1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="PARAMETERS" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="BODY" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="COMMA2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="static" value="static function $NAME$($PARAMETERS$) {&#10;       $BODY$          &#10;}$END$" description="Static Live Template" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAMETERS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="BODY" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="(cb)" value="($PARAM$cb) =&gt; {$END$}" description="Callback Live Template" toReformat="false" toShortenFQNames="true">
+    <variable name="PARAM" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>

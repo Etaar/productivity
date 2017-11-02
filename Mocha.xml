@@ -1,0 +1,38 @@
+<templateSet group="Mocha">
+  <template name="describe" value="describe('$TESTNAME$', function () {&#10;    $END$&#10;});" description="Describe Live Template" toReformat="false" toShortenFQNames="true">
+    <variable name="TESTNAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="it(" value="it('$STATE$', function (done) {&#10;    $END$&#10;    done();&#10;});" description="It Live Template" toReformat="false" toShortenFQNames="true">
+    <variable name="STATE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="beforeEach" value="beforeEach(function($DONE$) {&#10;&#9;$END$&#10;});" description="beforeEach Live Template" toReformat="false" toShortenFQNames="true">
+    <variable name="DONE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="afterEach" value="afterEach(function($DONE$) {&#10;&#9;$END$&#10;});" description="afterEach Live Template" toReformat="false" toShortenFQNames="true">
+    <variable name="DONE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="after" value="after(function($DONE$) {&#10;&#9;$END$&#10;});" description="After Live Template" toReformat="false" toShortenFQNames="true">
+    <variable name="DONE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="before" value="before(function($DONE$) {&#10;&#9;$END$&#10;});" description="Before Live Template" toReformat="false" toShortenFQNames="true">
+    <variable name="DONE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+</templateSet>
