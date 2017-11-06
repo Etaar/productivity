@@ -59,4 +59,10 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
+  <template name="_omit" value="_.omit($COLLECTION$, $END$); " description="Omit Live Template" toReformat="false" toShortenFQNames="true">
+    <variable name="COLLECTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
 </templateSet>

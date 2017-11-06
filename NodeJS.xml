@@ -69,6 +69,12 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
+  <template name="()=&gt;" value="($PARAM$) =&gt; {$END$}" description="Arrow Function Live Template" toReformat="false" toShortenFQNames="true">
+    <variable name="PARAM" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
   <template name="(cb)" value="($PARAM$cb) =&gt; {$END$}" description="Callback Live Template" toReformat="false" toShortenFQNames="true">
     <variable name="PARAM" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
