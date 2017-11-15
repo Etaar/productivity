@@ -48,7 +48,8 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="_isUndefined" value="_.isUndefined($END$); " description="isUndefined Live Template" toReformat="false" toShortenFQNames="true">
+  <template name="_isUndefined" value="_.isUndefined($END$)$SEMICOLON$ " description="isUndefined Live Template" toReformat="false" toShortenFQNames="true">
+    <variable name="SEMICOLON" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
